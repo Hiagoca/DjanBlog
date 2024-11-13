@@ -1,0 +1,14 @@
+html,
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#formNew input[type="file"] {
+    height: 100px;
+    background-color: rgb(195, 195, 195);
+    padding: .5rem;
+}
+
+.errorlist {
+    color: red;
+}
