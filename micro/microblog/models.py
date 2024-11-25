@@ -51,7 +51,8 @@ class NewPost(models.Model):
 
         # Bloqueia imagens maiores que max_image['size']
         if self.image and self.image.size > self.max_image['size'] * 1024 * 1024:
-            raise ValidationError(f'A imagem não pode exceder {self.max_image["size"]} MB.')
+            raise ValidationError(f'A imagem não pode exceder {
+                                  self.max_image['size']} MB.')
 
     def save(self, *args, **kwargs):
 
